@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.kick-track {
+    display: flex;
+
+}
+.mute.active{
+color: red;
+}
+.hihat-track{
+    display: flex;
+}
+.snare-track{
+display: flex;
+
+}
+.pad{
+width: 50px;
+height: 50px;
+margin-right: 20px;
+
+}
+.hihat,.kick,.snare{
+    display: flex;
+    flex-direction: row;
+    margin: 80px 0px 0px 40px;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;    
+    flex: 1;
+}
+.snare-pad.active{
+    background-color: rgba(36, 36, 219, 0.363);
+
+}
+.kick-pad.active{
+    background-color: rgba(83, 204, 3, 0.363);
+
+}
+.hihat-pad.active{
+    background-color: rgb(3, 66, 68);
+
+}
+.snare-pad{
+    background-color: rgba(190, 190, 228, 0.363);
+}
+.kick-pad{
+    background-color: rgba(149, 196, 117, 0.363);
+
+}
+.hihat-pad{
+    background-color: rgba(63, 93, 94, 0.363);
+
+}
+.pad{
+    transition: all 0.5s ease;
+}
+.play-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play{
+    margin-top: 100px;
+}
+
+@keyframes playTrack{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.2);
+    }
+}
+.tempontrol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.tempostep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.play.active{
+    color: blue;
+}
